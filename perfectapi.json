@@ -5,15 +5,16 @@
 			"synopsis": "Publishes an app",
 			"description": "",
 			"verb": "POST",
-			"parameter": {"name":"AppName", "required":true, "description":"unique name of the app"},
+			"parameter": {"name":"name", "required":true, "description":"unique name of the app"},
 			"options": [
-				{"option":"file", "required":true, "description":"zip file containing the contents of the service to install"},
+				{"option":"git", "required":true, "description":"git url to accessible package"},
 				{"option":"path", "required":true, "description":"url path on which the service will listen"}
 			]
 		}
 	], 
 	"path": "paas/host",
 	"environment": [
-		{"parameter": "SERVICE_REGISTRY_URL", "required":true, "description":"Full url of service registry endpoint"}
+		{"parameter": "SERVICE_REGISTRY_URL", "required":true, "description":"Full url of service registry endpoint"},
+		{"parameter": "PAAS_FILES", "required": true, "default": "/var/local/paas", "description":"where should the service files be placed on this machine"}
 	]
 }
