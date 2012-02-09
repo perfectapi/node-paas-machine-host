@@ -1,0 +1,22 @@
+{   "name":             "paas-machine-host"
+,   "version":          "0.0.1"
+    ,"description": "Per-machine host for perfectapi self-hosted PaaS solution"
+,   "author":  {"name": "Steve Campbell", "email": "steve@perfectapi.com" }
+    ,"keywords": "paas,host,forever,service"
+    ,"homepage": "http://blog.perfectapi.com/2012/writing-a-paas-using-node.js-in-1-week-monday/"
+    ,"bugs": {"url": "https://github.com/perfectapi/node-paas-machine-host/issues", "email": "paas@perfectapi.com" }
+    ,"main": "./bin/host.js"
+	,"bin": "./bin/host.js"
+,   "engines": {
+        "node" : ">=0.6.5"
+    }
+,   "dependencies":    {   
+		"perfectapi": ">=0.0.18",
+		"async": ">=0.1.15"
+    }
+,   "repository" :
+    {
+        "type" : "git",
+        "url" : "git://github.com/perfectapi/node-paas-machine-proxy.git"
+    }
+}
