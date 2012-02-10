@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-//var perfectapi = require('perfectapi');  
-var perfectapi = require('../../perfectapi/api.js')
+var perfectapi = require('perfectapi');  
+//var perfectapi = require('../../perfectapi/api.js')
 var path = require('path');
 var main = require('../lib/main.js');
 var claimer = require('../lib/claim.js');
