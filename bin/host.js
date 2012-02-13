@@ -35,8 +35,10 @@ parser.on("server", function(config) {
   perfectapi.proxy(registryEndpoint, function(err, registry) {
     if (err) return console.error(err);
     
+    //TODO: check first if our load is low enough.
+    claimer.claim(config, registry);
+    
     setInterval(function() {
-      //TODO: check first if our load is low enough.
       claimer.claim(config, registry);
     }, pollInterval);
     

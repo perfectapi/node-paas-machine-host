@@ -7,8 +7,10 @@
 			"verb": "POST",
 			"parameter": {"name":"name", "required":true, "description":"unique name of the app"},
 			"options": [
-				{"option":"git", "required":true, "description":"git url to accessible package"},
-				{"option":"path", "required":true, "description":"url path on which the service will listen"}
+				{"option":"giturl", "required":true, "description":"git url to accessible package"},
+				{"option":"path", "required":true, "description":"url path on which the service will listen"},
+				{"option":"hostmax", "required":false, "description":"maximum number of service instances allowed on a host, default = numCpus"},
+				{"option":"max", "required":true, "default":10, "description":"total maximum number of service instances allowed"}
 			]
 		}
 	], 
